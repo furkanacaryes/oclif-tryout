@@ -1,0 +1,56 @@
+{
+  "name": "oclif-tryout",
+  "description": "Trying out ocliff.",
+  "version": "0.0.0",
+  "author": "Furkan ACAR (https://github.com/futuredayv)",
+  "bin": {
+    "oclif-tryout": "./bin/run"
+  },
+  "bugs": "https://github.com/_play/oclif-tryout/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@oclif/config": "^1.13.3",
+    "@oclif/plugin-help": "^2.2.1",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@oclif/tslint": "^3.1.1",
+    "@types/node": "^10.14.19",
+    "globby": "^10.0.1",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/futuredayv/oclif-tryout",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "oclif-tryout",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "futuredayv/oclif-tryout",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
