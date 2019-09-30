@@ -30,6 +30,7 @@ USAGE
 <!-- commands -->
 * [`oclif-tryout hello [FILE]`](#oclif-tryout-hello-file)
 * [`oclif-tryout help [COMMAND]`](#oclif-tryout-help-command)
+* [`oclif-tryout now [FILE]`](#oclif-tryout-now-file)
 
 ## `oclif-tryout hello [FILE]`
 
@@ -49,7 +50,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/_play/oclif-tryout/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/futuredayv/oclif-tryout/blob/v0.0.0/src/commands/hello.ts)_
 
 ## `oclif-tryout help [COMMAND]`
 
@@ -67,4 +68,20 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
+
+## `oclif-tryout now [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ oclif-tryout now [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/now.ts](https://github.com/futuredayv/oclif-tryout/blob/v0.0.0/src/commands/now.ts)_
 <!-- commandsstop -->
